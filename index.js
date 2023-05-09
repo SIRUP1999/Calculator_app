@@ -19,7 +19,7 @@
       screen2.value = ''
     } else {
       let answer = eval(screen.value)
-      screen2.value = answer
+      screen2.value = [answer]
     }
   })
 
@@ -29,6 +29,6 @@
   })
 
   deleteBtn.addEventListener('click', () => {
-    screen.value = screen.value.pop([screen.value.length - 1])
+    screen.value = screen.value.slice(0, -1)
   })
 })()
