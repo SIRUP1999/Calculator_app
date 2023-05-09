@@ -32,3 +32,6 @@
     screen.value = screen.value.slice(0, -1)
   })
 })()
+
+const numbers = [2, 1, 3, 4, 5]
+console.log(numbers.sort((a, b) => (a > b ? 1 : a < b ? -1 : 0)))
